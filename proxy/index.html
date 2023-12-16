@@ -1,0 +1,64 @@
+
+<div style="padding-left:16px; text-align: center; color: white;margin:80px;z-index:1;">
+    <div>
+      <form method="POST" id="uform" autocomplete="off" style="z-index:1;">
+        <input type="text" name="url" class="form__input proxybar" id="name" tag="searchbar" style="font-family:poppins;font-size:20px;z-index:1;"
+          placeholder="Type URL or search query">
+          <p class="randomText" id="placeholder"></p>
+      </form>
+    </div>
+   
+      </svg></a>
+    </div>
+    <script>
+const options = [
+  "V4 doesn't look much different from V3 to be honest",
+  "Check out the apps and games section!",
+  "Why are you here? Go study.",
+  "Right-Click to access more features",
+  "Fun Fact: You can set a custom background by going to settings.",
+  "We have spent and earned zero dollars from Doge Unblocker.",
+  "Tip: Tab Cloaking is highly recommended!",
+  "Did you know: A snail breathes through its foot",
+  "Fun Fact: 20% of Doge Unblocker was coded with ChatGPT",
+  "Join our Discord if you have any suggestions!",
+  "Tip: Enable authentication in settings.",
+  "Chromebooks are honestly L's",
+  "Fun Fact: Snakes can predict earthquakes",
+  "You can customize Doge Unblocker by going to Settings > Themes",
+  "If the particles in the background are lagging the site, you can disable it in Settings."
+];
+
+function getRandomOption() {
+  const randomNumber = Math.floor(Math.random() * options.length);
+  return options[randomNumber];
+}
+
+function setRandomPlaceholder() {
+  const placeholder = document.getElementById("placeholder");
+  placeholder.textContent = getRandomOption();
+}
+
+setRandomPlaceholder();
+
+document.getElementById("placeholder").addEventListener("click", setRandomPlaceholder);
+</script>
+  <script src="/proxy/js/index.js"></script>
+  <script src="/proxy/uv.handler.js"></script>
+  <script src="/proxy/uv.bundle.js"></script>
+  <script src="/proxy/uv.config.js"></script>
+  <script src="/proxy/clock.js"></script>
+  <script>
+    var bgUrl = localStorage.getItem('bgUrl');
+    if (bgUrl === 'none' || bgUrl === null || bgUrl === '') {
+        console.log('No custom background set.');
+    } else {
+        document.body.style.backgroundImage = `url(${bgUrl})`;
+        document.getElementById('particles-js').remove();
+    }
+      </script>
+
+</script>
+  </div>
+</body>
+</html>
